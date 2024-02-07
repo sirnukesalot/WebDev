@@ -1,0 +1,10 @@
+.box-demo{
+    width: 400px;
+    height: 400px;
+}
+.box-layout{
+    display: grid;
+    width: max-content;
+    gap: 0.5rem;
+    grid-template-columns: 1fr min-content;
+}
