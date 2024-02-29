@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<ul>
+<li><a class="fancy-button" (click)="showAllItems()">Home</a></li>
+  <li><a class = "fancy-button" *ngFor="let category of categories" (click)="filterItems(category.categoryName)">{{category.categoryName}}</a>
+</ul>
+
+
+<div *ngFor="let product of filteredItems">
+  <h3>
+    <a href="{{ product.link }}" [title]="product.name + ' details'">
+      {{ product.name }}
+    </a>
+  </h3>
+  <h4>{{ product.price }}</h4>
+  <img src="{{ product.imageUrl }}" width="200" height="300" />
+  <p *ngIf="product.description">Description: {{ product.description }}</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <a href="{{product.sharelink}}" class="fancy-button">Share</a>
+  <a class="fancy-button" (click)="like(product)">Likes: {{product.likes}}</a>
+<!--  <a class="fancy-button" (click)="removeItem(product.id)">Remove</a>;-->
+</div>
