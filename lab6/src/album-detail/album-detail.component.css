@@ -1,0 +1,30 @@
+button{
+  padding: 3px 6px;
+  border-radius: 3px;
+  background:cornflowerblue;
+  border: 1px;
+  margin: 4px;
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+  font-family: SansSerif;
+  cursor: pointer;
+}
+
+.button{
+  padding: 3px 6px;
+  border-radius: 3px;
+  background:cornflowerblue;
+  border: 1px;
+  margin: 4px;
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+  font-family: SansSerif;
+  cursor: pointer;
+}
+
+input{
+  color: darkgray;
+  background-color: beige;
+}

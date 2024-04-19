@@ -1,0 +1,13 @@
+<div *ngIf="loaded" xmlns="http://www.w3.org/1999/html">
+  <h3>Album detail #{{album.id}}</h3>
+  <fieldset>
+    <input type="text" [(ngModel)]="newTitle" id="title"> <br />
+    <button (click)="changeTitle()">Save</button>
+  </fieldset>
+  <h4>{{album.title}}</h4>
+  <a [routerLink]="['photos']" class="button">Photos </a>
+  <button (click)="back()" class="button">Return</button>
+</div>
+<router-outlet></router-outlet>
+<p *ngIf="!loaded">Detail is loading...</p>
+

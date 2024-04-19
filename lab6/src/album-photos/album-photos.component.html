@@ -1,0 +1,11 @@
+
+<ul *ngIf = "loaded; else loading">
+  <li>Cj</li>
+  <li *ngFor="let albumPhotos of albumPhotos">
+    <a >{{albumPhotos.albumId}}</a>
+  </li>
+</ul>
+<ng-template #loading>
+  <p>Photos are loading</p>
+</ng-template>
+
